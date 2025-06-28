@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgreen;
+            text-align: center;
+            padding-top: 10px;
+        }
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: left;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .result-box {
+            background-color: white;
+            display: inline-block;
+            padding: 100px;
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/predict">Predict</a>
+        <a href="/details">Details</a>
+    </nav>
+    <div class="result-box">
+        <h2>Prediction Result</h2>
+        <p>The predicted rice type is: <strong>{{ prediction }}</strong></p>
+    </div>
+</body>
+</html>

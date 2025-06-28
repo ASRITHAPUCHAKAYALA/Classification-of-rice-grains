@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rice Classifier - Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("/static/pic.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 100vh;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .welcome {
+            text-align: center;
+            margin-top: 20%;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div><strong>Rice Classifier</strong></div>
+        <div>
+            <a href="/">Home</a>
+            <a href="/predict">Predict</a>
+            <a href="/details">Details</a>
+        </div>
+    </nav>
+    <div class="welcome">
+        <h1>Welcome to Rice Type Detection</h1>
+        <p>This model can detect rice type based on rice images.</p>
+    </div>
+</body>
+</html>
